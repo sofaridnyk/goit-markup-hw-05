@@ -622,6 +622,7 @@ footer {
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 72px 24px 24px 24px;
 }
 .backdrop.is-hidden .modal {
   transform: translateX(-50%) translateY(-70%);
@@ -654,9 +655,6 @@ footer {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-window {
-  padding: 72px 24px 24px 24px;
-}
 .modal-text {
   font-weight: 500;
   font-size: 16px;
