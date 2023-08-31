@@ -656,11 +656,10 @@ footer {
   color: var(--primary-navyblue-color);
   margin-bottom: 16px;
 }
-.name {
-  margin-bottom: 8px;
-}
+
 .info-area,
 .comment {
+  margin-bottom: 8px;
   margin-top: 8px;
   margin-bottom: 4px;
 }
