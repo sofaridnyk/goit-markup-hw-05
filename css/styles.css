@@ -286,8 +286,6 @@ a span {
   line-height: 1.2;
   letter-spacing: 0.02em;
   margin-bottom: 8px;
-  margin-top: 32px;
-  padding-left: 16px;
 }
 h2 {
   margin-top: 0 auto;
@@ -314,8 +312,7 @@ header {
 .nav-list {
   display: flex;
   justify-content: space-between;
-  padding-top: 24px;
-  padding-bottom: 24px;
+
   align-items: center;
   gap: 40px;
 }
@@ -350,9 +347,7 @@ header {
 .list-section-one {
   width: calc((100% - 72px) / 4);
 }
-.advantages-text {
-  margin-right: 8px;
-}
+
 .services {
   padding-bottom: 120px;
 }
@@ -560,10 +555,7 @@ footer {
 .card-img {
   margin-bottom: 0;
 }
-.card-text {
-  margin-bottom: 32px;
-  padding-left: 16px;
-}
+
 .cards-text {
   border: 1px solid var(--secondary-accent-color);
   border-top: 1px solid transparent;
@@ -667,8 +659,7 @@ footer {
 .name {
   margin-bottom: 8px;
 }
-.phone,
-.email,
+.info-area,
 .comment {
   margin-top: 8px;
   margin-bottom: 4px;
@@ -714,7 +705,7 @@ footer {
   transform: translateY(-50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.svg-modal:focus {
+.input-form:focus + .svg-modal {
   fill: #4d5ae5;
 }
 
@@ -757,7 +748,7 @@ footer {
   align-items: center;
   fill: transparent;
 }
-input:checked .span-checkbox {
+input:checked + checkbox-label > span-checkbox {
   background-color: var(--active-link-color);
   border: none;
   fill: var(--light-background-color);
