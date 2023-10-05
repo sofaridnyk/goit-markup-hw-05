@@ -749,7 +749,7 @@ footer {
   align-items: center;
   fill: transparent;
 }
-input:checked + checkbox-label > span-checkbox {
+.checkbox-form:checked + .checkbox-label > .span-checkbox {
   background-color: var(--active-link-color);
   border: none;
   fill: var(--light-background-color);
