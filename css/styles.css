@@ -76,8 +76,10 @@ button {
   letter-spacing: 0.02em;
   padding-top: 24px;
   padding-bottom: 24px;
-  margin-right: 40px;
+  /* margin-right: 40px; */
   position: relative;
+  display: block;
+  gap: 40px;
 }
 .studio-nav,
 .portfolio-nav {
@@ -124,6 +126,8 @@ a span {
 }
 .address {
   font-style: normal;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .link-address {
   color: var(--primary-slate-color);
@@ -131,9 +135,11 @@ a span {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  /* padding-top: 24px;
+  padding-bottom: 24px; */
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: block;
+  gap: 40px;
 }
 .link-address:hover,
 .link-address:focus {
@@ -319,8 +325,8 @@ header {
 .address-list {
   display: flex;
   justify-content: flex-end;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  /* padding-top: 24px;
+  padding-bottom: 24px; */
   margin: 0 auto;
   gap: 40px;
 }
@@ -343,6 +349,7 @@ header {
   padding-bottom: 24px;
   margin-bottom: 8px;
   height: 112px;
+  border: 1px solid var(--LIGHT-SLATE, #8e8f99);
 }
 .list-section-one {
   width: calc((100% - 72px) / 4);
@@ -357,7 +364,7 @@ header {
   gap: 24px;
 }
 .services-img {
-  border: 1px solid #e7e9fc;
+  /* border: 1px solid #e7e9fc; */
   width: calc((100% - 48px) / 3);
 }
 .team-list {
@@ -382,13 +389,14 @@ header {
   width: calc((100% - 48px) / 3);
 }
 .team-soc-media {
+  gap: 24px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .team-icons {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 24px;
+  /* gap: 24px; */
 }
 .team-text {
   padding: 32px 0;
@@ -401,6 +409,8 @@ header {
   gap: 24px;
   margin: 0 auto;
   padding-top: 8px;
+  width: 100%;
+  height: 100%;
 }
 
 .links-team:hover,
@@ -408,8 +418,8 @@ header {
   background-color: var(--active-link-color);
 }
 .links-team {
-  width: 100%;
-  height: 100%;
+  /* width: 100%;
+  height: 100%; */
   background-color: var(--primary-accent-color);
   border-radius: 50%;
   display: flex;
@@ -420,6 +430,15 @@ header {
 }
 .svg-team {
   fill: var(--light-background-color);
+}
+.portfolio {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.portfolio-container {
+  max-width: 1158px;
+  margin: 0 auto;
+  border-top: none;
 }
 .customers {
   padding-top: 120px;
@@ -509,13 +528,7 @@ footer {
   background-color: var(--green);
 }
 
-.portfolio-container {
-  max-width: 1158px;
-  margin: 0 auto;
-  padding: 32px 16px;
-  border-top: none;
-}
-.page-portfolio {
+/* .page-portfolio {
   padding-top: 96px;
   padding-bottom: 120px;
 }
@@ -527,7 +540,7 @@ footer {
 }
 .menu-button {
   margin-right: 24px;
-}
+} */
 .cards-link {
   display: block;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -663,10 +676,10 @@ footer {
 .info-area,
 .comment {
   margin-bottom: 8px;
-  margin-top: 8px;
 }
 .comment {
   margin-bottom: 16px;
+  display: block;
 }
 
 .checkbox {
@@ -705,6 +718,7 @@ footer {
   top: 50%;
   transform: translateY(-50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: var(--primary-navyblue-color);
 }
 .input-form:focus + .svg-modal {
   fill: #4d5ae5;
@@ -776,6 +790,12 @@ footer {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   margin: 0 auto;
 }
+
+.modal-form-btn:hover,
+.modal-form-btn:focus {
+  background-color: var(--active-link-color);
+}
+
 .footer-form-text {
   margin-bottom: 16px;
   font-weight: 500;
@@ -783,12 +803,14 @@ footer {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #ffffff;
-  margin-left: 80px;
 }
 
 .footer-email-form {
   display: flex;
   gap: 24px;
+}
+.footer-form {
+  margin-left: 80px;
 }
 .footer-input {
   width: 264px;
@@ -802,7 +824,7 @@ footer {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   color: #ffffff;
-  margin-left: 80px;
+  /* /* /* margin-left: 80px; */
 }
 .footer-input::placeholder {
   color: #ffffff;
@@ -824,6 +846,12 @@ footer {
   border: none;
   border-radius: 4px;
 }
+
+.footer-button:hover,
+.footer-button:focus {
+  background-color: var(--active-link-color);
+}
+
 .svg-plane {
   margin-left: 16px;
 }
